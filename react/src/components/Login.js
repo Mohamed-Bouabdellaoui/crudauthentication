@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react'
 import {MyContext} from '../contexts/MyContext'
+import iconperson from '../img/personicon.svg'
 
 function Login(){
 
@@ -57,10 +58,15 @@ function Login(){
         successMsg = <div className="success-msg">{state.successMsg}</div>;
     }
 
-
-
     return(
-        <div className="_loginRegister">
+       
+  
+
+<div className="_loginRegister">
+    <div className='avatar'>
+
+    <img className='iconper' src={iconperson}></img>
+    </div>
             <h1>Login</h1>
             <form  onSubmit={submitForm} noValidate>
                 <div className="form-control">
@@ -81,6 +87,9 @@ function Login(){
                 <button onClick={toggleNav}>Register</button>
             </div>
         </div>
+
+
+   
     );
 }
 

@@ -8,7 +8,7 @@ const UserList = () => {
     editMode,
     cancelEdit,
     updateUser,
-    deleteUser,
+    deleteUser,  
   } = useContext(AppContext);
 
   // Storing users new data when they editing their info.

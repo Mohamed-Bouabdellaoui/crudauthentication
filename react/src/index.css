@@ -5,6 +5,9 @@
 }
 
 body {
+  background-image: url(./img/Web\ 1920\ –\ 1.png);
+  background-position: center;
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,8 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color:  #ffffff;
-  padding: 20px;
-  color: #3b5441;
+  height: 100vh;
 }
 
 code {
@@ -23,9 +25,15 @@ code {
 
 .userInfo,
 ._loginRegister{
-  padding-bottom: 25px;
-  max-width: 514px;
-  margin: 0 auto;
+  background-color: rgb(222 222 222 / 10%);
+  backdrop-filter:blur(3px);
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+  -webkit-backdrop-filter: blur(3px);
+  padding: 25px;
+  color: white;
+  
+  max-width: 400px;
+  margin: 30px auto;
   border-radius: 5px;
 }
 
@@ -52,9 +60,13 @@ code {
   outline: none;
   margin-bottom: 5px;
   font-size: 16px;
-  border-radius: 13px;
+  border-left: hidden;
+  border-right: hidden;
+  border-top: hidden;
+  background: transparent;
+  border-bottom: 1px solid black;
   
-    border: 1px solid rgba(0, 0, 0, .3);
+  
 }
 
 [type="text"]:hover,
@@ -70,18 +82,18 @@ code {
 ._navBtn button,
 [type="submit"]{
  
-  background: #1dd05d;
+  background: #a9bdff;
   color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, .1);
+  border: none;
   padding: 10px;
-  cursor: pointer;
+
   font-size: 16px;
-  border-radius: 20px;
+  border-radius:5px;
  
   
-  margin-top: 5px;
+  margin-top: 7px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  outline: none;
+ 
 }
 ._navBtn button:hover,
 [type="submit"]:hover{
@@ -170,17 +182,22 @@ code {
 .App {
   max-width: 900px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: rgb(222 222 222 / 10%);
+  backdrop-filter:blur(3px);
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+  -webkit-backdrop-filter: blur(3px);
   padding: 20px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-radius: 3px;
 }
 
 .App h1 {
-  background-color: #f9f9f9;
+  background-color: #0036dc;
+  color: white;
   text-align: center;
   padding: 20px;
   margin: 0;
+  border-radius: 5px;
 }
 
 .wrapper {
@@ -206,7 +223,7 @@ code {
 
 .right-side table th,
 .right-side table td {
-  border: 1px solid #cccccc;
+  
   padding: 10px;
   text-align: center;
 }
@@ -216,7 +233,8 @@ code {
 }
 
 .right-side table th {
-  background-color: #F9FAFB;
+  background-color: #0036dc;
+  color: white;
   font-size: 20px;
   padding: 15px;
 }
@@ -226,9 +244,13 @@ code {
 }
 
 .insertForm{
-  background-color: #F9FAFB;
-  border: 1px solid #cccccc;
+  background-color: rgb(222 222 222 / 10%);
+  backdrop-filter:blur(3px);
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+  -webkit-backdrop-filter: blur(3px);
   padding: 10px;
+  color: white;
+  border-radius: 5px;
 }
 
 .insertForm h2 {
@@ -249,7 +271,8 @@ code {
 
 .insertForm [type="submit"] {
   margin-top: 5px;
-  background: #1F2937;
+  background: #0036dc;   
+
   color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
@@ -276,7 +299,7 @@ code {
   color: #ffffff;
 }
 .red-btn{
-  background: #DC2626;
+  background: #ff304f;
 }
 .default-btn{
   background: #E5E7EB;
@@ -284,3 +307,18 @@ code {
 .btn:hover{
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.iconper{
+
+  width: 70px;
+  height: 70px;
+ 
+}
+
+
+

@@ -1,5 +1,7 @@
 import React, {useContext,useState} from 'react'
 import {MyContext} from '../contexts/MyContext'
+import iconperson from '../img/personicon.svg'
+
 
 function Register(){
     const {toggleNav,registerUser} = useContext(MyContext);
@@ -56,6 +58,10 @@ function Register(){
 
     return(
         <div className="_loginRegister">
+            <div className='avatar'>
+
+<img className='iconper' src={iconperson}></img>
+</div>
             <h1>Sign Up</h1>
             <form onSubmit={submitForm} noValidate>
                 <div className="form-control">
